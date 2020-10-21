@@ -42,16 +42,16 @@ class APIController extends AbstractController
                 return $object->getId();
             }
         ]);
-//
-//        $response = new Response($jsonContent);
-//        $response->headers->set('Content-Type', 'application/json');
-//
-//        return $response;
+
+        $response = new Response($jsonContent);
+        $response->headers->set('Content-Type', 'application/json');
+
+        return $response;
 
 //        Test Affichage de la liste
-        return $this->render('api/index.html.twig', [
-            'quotes' => $quote
-        ]);
+//        return $this->render('api/index.html.twig', [
+//            'quotes' => $quote
+//        ]);
     }
 
     /**
